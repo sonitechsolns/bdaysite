@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f6f0ff" />
+  <meta name="description" content="A little lavender universe made for a very special 19th birthday." />
+  <title>Happy 19th — a little universe for you</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="assets/mosaic/mosaic-data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Back to top"><span class="brand-mark">✳</span> a little universe</a>
+    <nav aria-label="Main navigation">
+      <a href="#memories">Memories</a>
+      <a href="#soundtrack">Soundtrack</a>
+      <a href="#wishes">Wishes</a>
+    </nav>
+    <a class="nav-note" href="#personalise">Make it yours <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> FOR YOUR NINETEENTH TRIP AROUND THE SUN</p>
+        <h1 id="hero-title"><span class="title-heavy">Happy</span><span class="title-script">19th</span><span class="title-birthday">Birthday<span class="period">.</span></span></h1>
+        <p class="hero-to">to <span id="birthdayNameText">my favourite human</span>,</p>
+        <p class="hero-description">a little place for all the photos, songs, and tiny moments that make you <em>you.</em></p>
+        <a class="button button-dark" href="#memories">Open your little universe <span aria-hidden="true">↓</span></a>
+        <p class="hero-footnote"><span class="tiny-star">✦</span> made with love, just for you</p>
+      </div>
+
+      <div class="hero-art-wrap">
+        <div class="portrait-orbit orbit-one" aria-hidden="true"></div>
+        <div class="portrait-orbit orbit-two" aria-hidden="true"></div>
+        <div class="portrait-card" id="portraitCard">
+          <div class="portrait-placeholder" id="portraitPlaceholder" aria-hidden="true">
+            <div class="placeholder-sun"></div>
+            <div class="placeholder-hair"></div>
+            <div class="placeholder-face"><span class="placeholder-eye eye-left"></span><span class="placeholder-eye eye-right"></span><span class="placeholder-smile"></span></div>
+            <div class="placeholder-neck"></div>
+            <div class="placeholder-shoulders"></div>
+            <span class="photo-placeholder-label">HER PHOTO GOES HERE</span>
+          </div>
+          <img id="heroPhoto" class="hero-photo" alt="Birthday girl's portrait" />
+          <div class="portrait-label"><span class="portrait-label-star">✳</span><span>the birthday girl</span></div>
+        </div>
+        <div class="floating-note note-top">nineteen looks lovely on you <span>♡</span></div>
+        <div class="floating-note note-bottom"><span class="note-sparkle">✦</span> one of one</div>
+        <svg class="hero-doodle" viewBox="0 0 120 78" fill="none" aria-hidden="true"><path d="M5 58C20 18 42 11 62 27C78 40 74 63 90 57C103 52 106 31 115 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 5"/><path d="M102 17L115 15L114 28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="hero-bottomline"><span>SCROLL TO UNWRAP</span><span class="scroll-track"><span></span></span><span>01 / 04</span></div>
+    </section>
+
+    <section id="memories" class="memories-section" aria-labelledby="memories-title">
+      <div class="section-heading section-shell">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A GALLERY OF YOU</p>
+        <h2 id="memories-title">Little moments.<br /><em>One big</em> heart.</h2>
+        <div class="heading-side-note"><span class="side-note-star">✳</span><p>Every tiny square holds a memory.<br />Hover to pause on one.</p></div>
+      </div>
+      <div class="mosaic-runway" id="mosaicRunway">
+        <div class="mosaic-sticky" id="mosaicStage">
+          <div class="mosaic-topline"><span>THE MEMORY MOSAIC</span><span id="memoryCountLabel">a thousand little moments</span></div>
+          <div class="mosaic-grid" id="mosaicGrid" aria-label="A portrait-shaped mosaic of memories"></div>
+          <div class="mosaic-bottomline"><span>MOVE TO DISCOVER</span><span class="mosaic-heart">♡</span><span>KEEP THE GOOD ONES CLOSE</span></div>
+          <div class="explosion-copy" id="explosionCopy" aria-hidden="true">
+            <span class="explosion-kicker">AND EVERY ONE MATTERS</span>
+            <p>Look how much<br /><em>life you've lived.</em></p>
+            <span class="explosion-continue">keep going ↓</span>
+          </div>
+        </div>
+      </div>
+      <div class="mosaic-note section-shell"><span>✦</span> A face made from a hundred little pieces of happiness.</div>
+    </section>
+
+    <section id="soundtrack" class="soundtrack-section" aria-labelledby="soundtrack-title">
+      <div class="soundtrack-glow glow-one" aria-hidden="true"></div>
+      <div class="soundtrack-glow glow-two" aria-hidden="true"></div>
+      <div class="soundtrack-heading section-shell">
+        <div>
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> YOUR LIFE, IN SONGS</p>
+          <h2 id="soundtrack-title">Press play on<br /><em>your kind of magic.</em></h2>
+          <p class="soundtrack-subtitle">For the main-character walks, late-night talks, and everything in between.</p>
+        </div>
+        <div class="playlist-control">
+          <button class="button button-light" id="changeSongBtn" type="button" aria-expanded="false" aria-controls="songMenu">Change song <span aria-hidden="true">⌄</span></button>
+          <div class="song-menu" id="songMenu" hidden>
+            <div class="song-menu-title"><span>THE LITTLE PLAYLIST</span><button type="button" class="menu-close" id="closeSongMenu" aria-label="Close playlist">×</button></div>
+            <div class="song-list" id="songList"></div>
+            <button type="button" class="song-add-button" id="addSongsFromMenu">＋ Add song files</button>
+            <a class="spotify-link" id="spotifyLink" href="#" target="_blank" rel="noreferrer" hidden>Open playlist on Spotify ↗</a>
+          </div>
+          <p class="now-playing" id="nowPlaying">a soundtrack for you</p>
+        </div>
+      </div>
+
+      <div class="slideshow-window" aria-label="A moving slideshow of birthday memories">
+        <div class="slideshow-track" id="slideshowTrack">
+          <div class="slideshow-placeholder"><span class="slideshow-placeholder-icon">♡</span><span>your favourite moments</span></div>
+          <div class="slideshow-placeholder"><span class="slideshow-placeholder-icon">✳</span><span>the little things</span></div>
+          <div class="slideshow-placeholder"><span class="slideshow-placeholder-icon">✦</span><span>all the versions of you</span></div>
+        </div>
+      </div>
+      <div class="soundtrack-bottom section-shell">
+        <div class="vinyl-wrap" aria-hidden="true"><div class="vinyl"><span></span></div></div>
+        <div class="soundtrack-quote"><p>“Some songs feel like a place<br />you've been happy in.”</p><span>— this playlist is one of those places</span></div>
+        <div class="audio-actions"><button type="button" id="playPauseBtn" class="play-round" aria-label="Play soundtrack">▶</button><span id="audioStatus">The music will start when this section appears.</span></div>
+      </div>
+      <audio id="birthdayAudio" preload="none"></audio>
+      <input id="musicUpload" class="visually-hidden" type="file" accept="audio/*" multiple />
+    </section>
+
+    <section id="wishes" class="wishes-section" aria-labelledby="wishes-title">
+      <div class="wishes-layout section-shell">
+        <div class="wishes-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE LOVE, FROM YOUR PEOPLE</p>
+          <h2 id="wishes-title">A few voices<br /><em>that love you.</em></h2>
+          <p>Because no birthday is complete without the people who make life feel like home.</p>
+          <div class="wishes-signoff"><span class="signoff-line"></span><span>press play, save this forever</span></div>
+        </div>
+        <div class="video-frame" id="videoFrame">
+          <div class="video-placeholder" id="videoPlaceholder">
+            <div class="video-placeholder-art"><span class="video-play-icon">▶</span><span class="video-spark spark-a">✦</span><span class="video-spark spark-b">✳</span></div>
+            <p class="video-placeholder-title">Your birthday wishes go here</p>
+            <p class="video-placeholder-subtitle">A little clip from all your favourite people.</p>
+            <button class="button button-dark button-small" id="addVideoFromPlaceholder" type="button">Add the video <span aria-hidden="true">＋</span></button>
+          </div>
+          <video id="birthdayVideo" class="birthday-video" playsinline controls muted loop preload="metadata"></video>
+          <div class="video-caption"><span>THE PEOPLE WHO MAKE IT HOME</span><span>♡</span></div>
+        </div>
+      </div>
+      <input id="videoUpload" class="visually-hidden" type="file" accept="video/*" />
+    </section>
+
+    <section class="closing-section" aria-label="Birthday closing note">
+      <div class="closing-star star-a">✦</div><div class="closing-star star-b">✳</div>
+      <p class="eyebrow">A NEW CHAPTER BEGINS</p>
+      <h2>Here's to being<br /><em>beautifully you.</em></h2>
+      <p class="closing-line">Happy 19th birthday. The world is sweeter with you in it.</p>
+      <a href="#top" class="back-to-top">back to the beginning ↑</a>
+      <div class="closing-footer"><span>MADE WITH ALL THE LOVE</span><span>✳</span><span>FOR YOUR 19TH</span></div>
+    </section>
+  </main>
+
+  <footer class="personalise-footer" id="personalise">
+    <details class="personalise-panel">
+      <summary><span>Personalise this page</span><span class="personalise-summary-note">Add your photos, songs & video <b>＋</b></span></summary>
+      <div class="personalise-content">
+        <p class="personalise-intro">Quick preview mode: select files to see them on this page. These selections stay in this browser tab only. For a published website, follow the setup steps in <code>README.md</code> and add your files to the assets folders.</p>
+        <div class="upload-grid">
+          <label class="upload-card" for="heroUpload"><span class="upload-icon">▧</span><strong>Birthday portrait</strong><small>Choose the main photo</small><span class="upload-action">Choose image ↗</span><input id="heroUpload" type="file" accept="image/*" /></label>
+          <label class="upload-card upload-card-tall" for="photoUpload"><span class="upload-icon">▦</span><strong>Memory photos</strong><small>Select 400–1,500 images</small><span class="upload-action">Choose photos ↗</span><input id="photoUpload" type="file" accept="image/*" multiple /></label>
+          <label class="upload-card" for="musicUploadVisible"><span class="upload-icon">♫</span><strong>Soundtrack</strong><small>Select MP3 / audio files</small><span class="upload-action">Choose songs ↗</span><input id="musicUploadVisible" type="file" accept="audio/*" multiple /></label>
+          <label class="upload-card" for="videoUploadVisible"><span class="upload-icon">▷</span><strong>Friends' wishes</strong><small>Choose one video</small><span class="upload-action">Choose video ↗</span><input id="videoUploadVisible" type="file" accept="video/*" /></label>
+        </div>
+        <p class="upload-status" id="uploadStatus" role="status">No local preview files selected yet.</p>
+      </div>
+    </details>
+  </footer>
+
+  <div class="hover-preview" id="hoverPreview" aria-hidden="true"><img id="hoverPreviewImage" alt="" /><span>one little memory</span></div>
+  <div class="photo-lightbox" id="photoLightbox" role="dialog" aria-modal="true" aria-label="Memory photo" hidden>
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image">×</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous image">←</button>
+    <figure><img id="lightboxImage" alt="A memory" /><figcaption id="lightboxCaption">a little memory</figcaption></figure>
+    <button class="lightbox-arrow lightbox-next" id="lightboxNext" type="button" aria-label="Next image">→</button>
+  </div>
+</body>
+</html>

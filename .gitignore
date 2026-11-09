@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# working/backup files, not used by the site
+_check/
+assets/mosaic/thumb/
+assets/mosaic/layout.json
+
+# original photos (~950 MB) - the site uses assets/mosaic/ instead
+assets/memories/*/
+
